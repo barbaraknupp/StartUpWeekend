@@ -1,66 +1,91 @@
-<!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<!doctype html>
+<html>
   <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
+  <title>IntraFeed</title>
+  <link href="css/index2.css" rel="stylesheet" type="text/css" />
 
-{% seo %}
-    <meta name="description" content="{{ page.description | default: site.description | default: site.github.project_tagline }}"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157878">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   </head>
+
   <body>
-    <section class="page-header">
-      <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
-      <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
+<div id="loadingOverlay">
+	<div id="loaderContainer"> <object data="./images/puff1.svg" type="image/svg+xml"></object></div>
+</div>
+  <div id="container" class="container">
 
-    </section>
+    <div class="menuBar">
+      <img id="logo"src="">
+        <ul id="nav">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">LogIn</a></li>
+        </ul>
+    </div>
 
-    <section class="main-content">
-      <div id="container" class="container">
+    <div class="titleBlock">IntraFeed</div>
 
-        <div class="menuBar">
-          <img id="logo"src="">
-            <ul id="nav">
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">LogIn</a></li>
-            </ul>
-        </div>
+    <div id="titleText"><div style="float: left;"  class="element"> </div></div>
 
-        <div class="titleBlock">IntraFeed</div>
+    <div id="signUpBtn">
 
-        <div id="titleText"><div style="float: left;"  class="element"> </div></div>
+    	<input type="submit" value="EXPLORE" name="SUBSCRIBE" id="mc-embedded-subscribe" class="button">
+        <!--<a href="#"><img src="images/signUp.png" onmouseover="this.src='images/suH.png'" onmouseout="this.src='images/signUp.png'"/></a>-->
+    </div>
 
-        <div id="signUpBtn">
+    <div id="signin" style="margin-left:730px; margin-top:-265px;">
+	<h1 style="margin-bottom:20px;"> Have an account? Sign in. </h1>
+	<input type="email" placeholder="Email Address" style="width:350px" value="" name="EMAIL" class="required email" id="mce-EMAIL"><br>
+       	<input type="password" placeholder="Password" style="width:350px"value="" name="password" ><br>
+        <h1 class="signin" style="font-size:14px; margin-top:-10px;"> Sign in </h1>
 
-          <input type="submit" value="EXPLORE" name="SUBSCRIBE" id="mc-embedded-subscribe" class="button">
-            <!--<a href="#"><img src="images/signUp.png" onmouseover="this.src='images/suH.png'" onmouseout="this.src='images/signUp.png'"/></a>-->
-        </div>
+        	<!--<input type="submit" value="LOGIN" name="SUBSCRIBE" id="mc-embedded-subscribe" class="button">-->
 
-        <div id="signin" style="margin-left:730px; margin-top:-265px;">
-      <h1 style="margin-bottom:20px;"> Have an account? Sign in. </h1>
-      <input type="email" placeholder="Email Address" style="width:350px" value="" name="EMAIL" class="required email" id="mce-EMAIL"><br>
-            <input type="password" placeholder="Password" style="width:350px"value="" name="password" ><br>
-            <h1 class="signin" style="font-size:14px; margin-top:-10px;"> Sign in </h1>
-
-              <!--<input type="submit" value="LOGIN" name="SUBSCRIBE" id="mc-embedded-subscribe" class="button">-->
-
-        </div>
+    </div>
 
 
-      </div>
+<!--     <div id="links">
+      <a href="#"><img src="images/googleStore.png"></a>
+      <a href="#"><img src="images/appStore.png"></a>
+    </div> -->
 
-      <div id="footer">
-      <br>
-      <br>
-        <p>Questions? <strong>Find out what IntraFeed can do for your business.</strong><br>
-        © IntraFeed 2015</p>
-      </div>
+  </div>
 
+  <div id="footer">
+  <br>
+  <br>
+  	<p>Questions? <strong>Find out what IntraFeed can do for your business.</strong><br>
+    © IntraFeed 2015</p>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
+	<script src="./js/typed.js"> </script>
+    <script>
+     $(function(){
+      $(".element").typed({
+        strings: ["First sentence.", "Second d.","First asdf.","First asdfadsf.","First sadfsdaf.","asdfsadf sentence."],
+        typeSpeed: 100,
+		backSpeed:80,
+		backDelay:700,
+		showCursor: true,
+        cursorChar: "|",
+		loop: true,
+      });
+  });
 
+  window.onload = function () {
+  var load = setTimeout(function() {
+  	   $('html, body').css({ 'overflow': 'visible' })
+
+	 $("#loadingOverlay").fadeOut(500);
+	 setTimeout(function() {
+	 $("#container").fadeIn(1200);
+	}, 200);
+	}, 500);
+  }
+    </script>
+
+  </body>
+</html>
 
 
       <footer class="site-footer">
