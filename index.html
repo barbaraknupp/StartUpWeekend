@@ -21,9 +21,9 @@
     <div class="menuBar">
       <img id="logo"src="">
         <ul id="nav">
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Serviços</a></li>
-          <li><a href="#">Contato</a></li>
+          <li><a href="#sobre" class="scroll menu">Sobre</a></li>
+          <li><a href="#servicos"class="scroll menu">Serviços</a></li>
+          <li><a href="#contato"class="scroll menu">Contato</a></li>
         </ul>
     </div>
 
@@ -35,7 +35,18 @@
       <input type="submit" value="Me chama que eu vô" name="SUBSCRIBE" id="mc-embedded-subscribe" class="button">
     </div>
 
+    <section class="bloco1" id="bloco1">
+
+      oioioioioi;
+
+
+    </section>
+
+
+
   </div>/* primeiro container */
+
+
 
   <div id="footer">
   <br>
@@ -45,6 +56,13 @@
     © Cabruncas 2017</p>
   </div>
 
+<script type="text/javascript">jQuery(document).ready(function($) {
+        $(".scroll").click(function(event){
+                              event.preventDefault();
+                              $('html,body,section').animate({scrollTop:$(this.hash).offset().top}, 600);
+                             });
+                         });
+ </script>
 
 	<script src="./js/typed.js"> </script>
     <script>
@@ -60,10 +78,10 @@
       });
   });
 
+//função para rolar página
   window.onload = function () {
   var load = setTimeout(function() {
   	   $('html, body').css({ 'overflow': 'visible' })
-
 	 $("#loadingOverlay").fadeOut(500);
 	 setTimeout(function() {
 	 $("#container").fadeIn(1200);
