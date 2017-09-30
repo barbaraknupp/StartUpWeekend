@@ -19,7 +19,7 @@ body, html{
 body {
 	height: 100%;
 	margin: 0;
-	background-image: url(fundo.png);
+	background-image: url(./imagens/fundo.png);
 	background-position: center;
 	background-size: cover;
 }
@@ -74,11 +74,6 @@ body {
 	color: #fff;
 }
 
-#log{
-	height: 100%;
-	background-image: url(../images/loginBtn.png);
-	background-size: contain;
-}
 
 .titleBlock {
     font-family: "Montserrat";
