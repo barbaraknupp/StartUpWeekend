@@ -1,59 +1,5 @@
 /*@import url(http://fonts.googleapis.com/css?family=Montserrat:400,300,200,500,600,700,100);*/
 
-*{
-	margin:0;
-	padding:0;
-	box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;}
-
-body {	font-family:arial;}
-
-p {
-	font-size:13px;
-	color:#777;
-	margin-bottom:15px;
-	line-height:25px;}
-
-img {
-	margin: 0 auto;
-
-  }
-
-nav.menu {
-	width:1140px;
-	height:150px;
-	margin:auto;
-	padding:40px 0 0 0;}
-
-nav.menu ul {
-	float:left;
-	margin-left:50px;
-	margin-top:55px;}
-
-nav.menu ul li {
-	display:inline;
-	margin-right:20px;}
-
-nav.menu ul li a {
-	color:#333;
-	font-weight:bold;
-	text-decoration:none;}
-nav.menu ul li a:hover {
-	text-decoration:underline;}
-
-#inicio {
-	width:1140px;
-	margin:auto;
-	padding:40px 0;}
-#sobre {
-	width:1140px;
-	margin:auto;
-	padding:40px 0;}
-#produtos {
-	width:1140px;
-	margin:auto;
-	padding:40px 0;}
 
 @font-face {
   font-family: Oak;
@@ -68,4 +14,60 @@ nav.menu ul li a:hover {
 @font-face {
   font-family: TrashHand;
   src: url("../fonts/TrashHand.ttf");
+
+
+  *{
+  	margin:0;
+  	padding:0;
+  	box-sizing: border-box;
+  	-webkit-box-sizing: border-box;
+  	-moz-box-sizing: border-box;}
+
+  body {	font-family:arial;}
+
+  p {
+  	font-size:13px;
+  	color:#777;
+  	margin-bottom:15px;
+  	line-height:25px;}
+
+  img {
+  	margin: 0 auto;
+
+    }
+
+  nav.menu {
+  	width:1140px;
+  	height:150px;
+  	margin:auto;
+  	padding:40px 0 0 0;}
+
+  nav.menu ul {
+  	float:left;
+  	margin-left:50px;
+  	margin-top:55px;}
+
+  nav.menu ul li {
+  	display:inline;
+  	margin-right:20px;}
+
+  nav.menu ul li a {
+  	color:#333;
+  	font-weight:bold;
+  	text-decoration:none;}
+  nav.menu ul li a:hover {
+  	text-decoration:underline;}
+
+  #inicio {
+  	width:1140px;
+  	margin:auto;
+  	padding:40px 0;}
+  #sobre {
+  	width:1140px;
+  	margin:auto;
+  	padding:40px 0;}
+  #produtos {
+  	width:1140px;
+  	margin:auto;
+  	padding:40px 0;}
 }
